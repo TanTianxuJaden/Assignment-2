@@ -17,13 +17,13 @@
 }
 
 
-.men {
+.nav_container {
   float: right;
   overflow: hidden;
 }
 
 
-.men .men_button {
+.nav_container .nav_button {
   font-size: 16px;
   border: none;
   outline: none;
@@ -37,7 +37,7 @@
 
 
 
-.men-content {
+.quiz-content {
   display: none;
   position:absolute;
   background-color: white;
@@ -50,7 +50,7 @@
 }
 
 
-.men-content a {
+.quiz-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -61,12 +61,12 @@
 }
 
 
-.men-content a:hover {
+.quiz-content a:hover {
   background-color: darkgrey;
 }
 
 
-.men:hover .men-content {
+.nav_container:hover .quiz-content {
   display: block;
 }
 
