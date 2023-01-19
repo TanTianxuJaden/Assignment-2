@@ -1,0 +1,19 @@
+.Information
+{
+    padding: 8px;
+}
+
+.quiz_images
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text_quiz_images {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+  } 
