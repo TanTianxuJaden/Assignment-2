@@ -10,7 +10,80 @@
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-    border-radius: 5px;
-    border-color: black;
-    border-style: solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; 
   }
+
+.a:focus{
+  outline: none;
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition:all .3s ease;
+}
+
+.overlayOne{
+  height: 100%;
+  width:0;
+  top:0;
+  left:0;
+}
+
+.history_button {
+  background-color: rgb(255, 251, 42);
+  padding-left: 18px;
+  padding-right: 18px;
+  text-decoration: none;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: black;
+  font-size: 75%;
+}
+
+.geometry_button {
+  background-color: rgb(238, 16, 16);
+  padding-left: 18px;
+  padding-right: 18px;
+  text-decoration: none;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-size: 75%;
+}
+
+.geography_button {
+  background-color: rgb(85, 152, 240);
+  padding-left: 18px;
+  padding-right: 18px;
+  text-decoration: none;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-size: 75%;
+}
+
+.ck_button {
+  background-color: rgb(216, 41, 216);
+  padding-left: 18px;
+  padding-right: 18px;
+  text-decoration: none;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-size: 75%;
+}
+
+.quiz_container {
+  position: relative;
+  text-align: center;
+}
