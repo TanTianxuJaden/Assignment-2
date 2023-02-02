@@ -1,4 +1,4 @@
-# Assignment-2 #
+# Kawizz #
 
 <!--Kawizz-->
 Our Assignment 2 main webpage will be filled with multiple quizs on general knowledge. The features in the main webpage is that it shows you your level and the user is able to view his level by clicking the avatar icon.  In each quiz webpage it features a personal leaderboard that can be updated after every attempt (API). Which features the users best score at the top of the leaderboard and specifies which quiz he did for that high score. This is to allow the user to have an overview of how they fare in the quizzes which can help them improve in their future attempts. Each questions is worth 10 points, and in order to up a level user have to hit a 100 points.
@@ -17,6 +17,8 @@ We have decided to go with a simple white purple theme with hinges of gray that 
 
 
 <!--Technologies used-->
+- Javascript
+- CSS
 
 <!--Credits-->
 <!--Media-->
