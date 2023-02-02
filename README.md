@@ -17,8 +17,6 @@ We have decided to go with a simple white purple theme with hinges of gray that 
 
 
 <!--Technologies used-->
-- Javascript
-- CSS
 
 <!--Credits-->
 <!--Media-->
