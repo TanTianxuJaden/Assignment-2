@@ -32,7 +32,6 @@
 }
 
 .history_button {
-  background-color: rgb(255, 251, 42);
   padding-left: 18px;
   padding-right: 18px;
   text-decoration: none;
@@ -40,12 +39,13 @@
   position: absolute;
   bottom: 8px;
   left: 16px;
-  color: black;
+  color: blue;
   font-size: 75%;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .geometry_button {
-  background-color: rgb(238, 16, 16);
   padding-left: 18px;
   padding-right: 18px;
   text-decoration: none;
@@ -53,12 +53,13 @@
   position: absolute;
   bottom: 8px;
   left: 16px;
-  color: white;
+  color: blue;
   font-size: 75%;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .geography_button {
-  background-color: rgb(85, 152, 240);
   padding-left: 18px;
   padding-right: 18px;
   text-decoration: none;
@@ -66,12 +67,13 @@
   position: absolute;
   bottom: 8px;
   left: 16px;
-  color: white;
+  color: blue;
   font-size: 75%;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .ck_button {
-  background-color: rgb(216, 41, 216);
   padding-left: 18px;
   padding-right: 18px;
   text-decoration: none;
@@ -79,11 +81,42 @@
   position: absolute;
   bottom: 8px;
   left: 16px;
-  color: white;
+  color: blue;
   font-size: 75%;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .quiz_container {
   position: relative;
   text-align: center;
+}
+
+.text_container
+{
+  background-color:white;
+  width: 75%;
+  height: 75%;
+  margin: 50px;
+  margin-left: -0.0025%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 30px;
+  position: absolute;
+  bottom: 18px;
+  left: 16px;
+  border-radius: 10px;
+}
+
+.text 
+{
+  font-size:65%;
+  margin:100px;
+  margin-bottom:60%;
+}
+
+.marginquiz
+{
+  margin-left: 50px;
+  margin-right:50px;
 }
