@@ -29,7 +29,7 @@ function checkAnswers() {
       score += 1;
     }
     var answer8 = document.querySelector('input[name="history8"]:checked').value;
-    if (answer8 === "A. 1789-1799") {
+    if (answer8 === "1789-1799") {
       score += 1;
     }
     var answer9 = document.querySelector('input[name="history9"]:checked').value;
