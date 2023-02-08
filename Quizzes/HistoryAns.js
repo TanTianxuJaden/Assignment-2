@@ -1,11 +1,11 @@
 function checkAnswers() {
     var score = 0;
     var answer1 = document.querySelector('input[name="history1"]:checked').value;
-    if (answer1 === "Paris") {
+    if (answer1 === "Joseph Stalin") {
       score += 1;
     }
     var answer2 = document.querySelector('input[name="history2"]:checked').value;
-    if (answer2 === "Yen") {
+    if (answer2 === "476 CE") {
       score += 1;
     }
     var answer3 = document.querySelector('input[name="history3"]:checked').value;
