@@ -22,6 +22,8 @@ We have decided to go with a simple white purple theme with hinges of gray that 
 - HTML
 - LOTTIE
 - Javascript
+- Bootstrap
+
 
 # Credits #
 # Media #
