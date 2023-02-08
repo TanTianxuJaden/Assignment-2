@@ -14,7 +14,11 @@ Our quizzes will have 10 random general knowledge questions every time the quiz 
 We have decided to go with a simple white purple theme with hinges of gray that complements the white in order to not make the website look so plain and empty. This colour scheme is suitable as there isn't anything that can distract users. We have taken inspiration from Kahoot such as the position of where to place the boxes as it is straightforward and easy to locate which box represents which quiz. Our avatar information will be a popup instead of a full page as there won't be full control of customisation of the avatar but instead the avatar simply changes over each level. 
 
 # Features #
-
+- Navigation bar such that user can sign up, log in, check his/her leaderboard and profile
+- 4 quizes for user to test his/her knowledge 
+- Quick sypnosis on what the quiz will be testing his/her about
+- Image below sypnosis to give user the idea on what type of topic quiz is going to test his/her on
+- In profile page, user is able to see his/her avatar and level
 
 # Technologies used #
 - CSS
