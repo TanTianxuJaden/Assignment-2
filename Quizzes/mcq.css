@@ -2,9 +2,10 @@ body{
     text-align: center;
 }
 
-form{
+.form_container{
+    border-style: outset;
     background-color: lightblue;
-    border-style: groove;
-    border-width: 2px;
+    width: 150px;
+    align-items: center;
 }
 
