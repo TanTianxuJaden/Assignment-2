@@ -6,7 +6,15 @@ $("#login_form").submit(function (e) {
   let email = $("#login-email").val();
   let password = $("#login-pw").val();
   matchAccounts(email,password)
+
+  $("body").append(`
+<div id="lottie-overlay">
+<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_VMNbpVQjTb.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin-left:850px"  loop autoplay></lottie-player>
+</div>
+`);
 });
+
+
 
 
 

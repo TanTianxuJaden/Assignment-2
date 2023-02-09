@@ -5,6 +5,13 @@ $("#leaderboardinputs").submit(function (e) {
 let score = $("#form-score").val();
 let subject = $("#form-subject").val();
 
+
+$("body").append(`
+<div id="lottie-overlay">
+<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_VMNbpVQjTb.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin-left:850px"  loop autoplay></lottie-player>
+</div>
+`);
+
 inputs(score,subject)
 });
 
