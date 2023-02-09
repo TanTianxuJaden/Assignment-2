@@ -18,6 +18,7 @@ function signup(name,email,password) {
     }
     
 
+
 var settings = {
   async: true,
   crossDomain: true,
@@ -35,6 +36,6 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
-  window.location.assign = "../Login/login.html";
+  window.location.href = "../Login/login.html";
 });
 }

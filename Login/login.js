@@ -3,14 +3,8 @@ let apikey = "63d663b83bc6b255ed0c43f7";
 
 $("#login").submit(function (e) {
     e.preventDefault();
-let name = $("#login_name").val();
 let email = $("#login_email").val();
 let password = $("#login_password").val();
-});
-
-
-
-
 var settings = {
     async: true,
     crossDomain: true,
@@ -22,9 +16,6 @@ var settings = {
       "cache-control": "no-cache"
     }
   }
-  
-
-  
   $.ajax(settings).done(function (response) {
     console.log(response);
     var loggedin = false;
@@ -34,8 +25,8 @@ var settings = {
             $("#submit_login").html(
                 `<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sjcbakkb.json">`
             );
-            sessionStorage.setItem("Account", JSON.stringify(response[i]));
-            console.log(sessionStorage.getItem("Account"));
+            sessionStorage.setItem("Login", JSON.stringify(response[i]));
+            console.log(sessionStorage.getItem("Login"));
             window.location.href = "../index.html"
         }
     }
@@ -46,3 +37,8 @@ var settings = {
         )
     }
   });
+});
+
+
+
+  
