@@ -2,48 +2,80 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+body{
+  background-color: rgba(235, 235, 235, 0.941);
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #ffffff;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 th, td {
-  text-align: left;
+  border: 1px  solid black;
+  text-align: center;
+  font-size: 125%;
   padding: 16px;
 }
 
 tr:nth-child(even) {
-  background-color: #cf8feb;
+  background-color: #a401ebd6;
+}
+
+.leaderboard{
+  border: 2px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: outset;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: fit-content;
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.leaderboard_flex{
+  display: flex;
+  justify-content: center;
+}
+.table_flex{
+  background-color: white;
 }
 </style>
 </head>
 <body>
 
-<div style="text-align: center;">
-<h2>Leaderboard</h2>
-<p>View your results!</p>
-</div>
+  <div class="leaderboard_flex">
+    <div style="text-align: center;" class="leaderboard">
+      <h2>Leaderboard</h2>  
+      <p>View your results!</p>
+    </div>
+  </div>
 
-<table>
-  <tr>
-    <th>Subject</th>
-    <th>Score</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-  </tr>
-  <tr>
-    <td>Adam</td>
-    <td>Johnson</td>
-  </tr>
-</table>
+<div class="table_flex">
+  <table>
+    <tr>
+      <th>Subject</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+    </tr>
+  </table>
+</div>
 
 </body>
 </html>
