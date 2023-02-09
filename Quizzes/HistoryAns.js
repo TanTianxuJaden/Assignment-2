@@ -40,6 +40,8 @@ function checkAnswers() {
     if (answer10 === "Artist & Scientist") {
       score += 1;
     }
+    document.getElementById("result").style.color="white";
+    document.getElementById("result").style.fontSize="125%";
     document.getElementById("result").innerHTML = "Your total score is " + score + " out of 10.";
   }
 
