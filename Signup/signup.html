@@ -14,34 +14,31 @@
 <br><br><br><br><br><br><br><br><br>
 <body>
 
-  
 	<div class="container">
 		<h1>Sign Up</h1>
 		</div>
 
-		<div class="form" id="signup">
-			<form id="add-signup-form">
-				<div class="form-group">
+    <form id="add-signup-form">
+
+				
 					<label for="form-name">Name</label>
             <input type="text" id="form-name" class="form-control" required>
           </div>
           <br><br>
 
-          <div class="form-group">
+         
             <label for="form-email">Email</label>
             <input type="email" id="form-email" class="form-control" required>
           </div>
           <br><br>
 
-          <div class="form" id="add-details">
-            <form id="add-signup-form">
-              <div class="form-group">
+              
                 <label for="form-pw">Password</label>
                   <input type="password" id="form-pw" class="form-control" required>
                 </div>
                 <br><br>
 
-          <button type="submit" class="btn btn-primary" id="submit_signup" onclick="signup($('#signup_name').val(),$('#signup_email').val(), $('#signup_password').val())">Sign me up!</button>
+          <button type="submit" class="btn btn-primary" id="submit_signup" onclick="signup($('#form-name').val(),$('#form-email').val(), $('#form-pw').val())">Sign me up!</button>
       </form>
     </center>
 
