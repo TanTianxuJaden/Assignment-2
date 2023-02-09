@@ -1,10 +1,10 @@
 let apikey = "63d663b83bc6b255ed0c43f7";
 
 
-$("#login").submit(function (e) {
+$("#login_form").submit(function (e) {
     e.preventDefault();
-let email = $("#login_email").val();
-let password = $("#login_password").val();
+let email = $("#login-email").val();
+let password = $("#login-pw").val();
 var settings = {
     async: true,
     crossDomain: true,
@@ -23,7 +23,6 @@ var settings = {
         if (response[i].email == email && response[i].password === password) {
             loggedin = true;
             $("#submit_login").html(
-                `<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sjcbakkb.json">`
             );
             sessionStorage.setItem("Login", JSON.stringify(response[i]));
             console.log(sessionStorage.getItem("Login"));
@@ -31,7 +30,7 @@ var settings = {
         }
     }
     if (loggedin === false) {
-        alert("Invalid name or password");
+        alert("Invalid email or password");
         $("#submit_login").html(
             `<button type="submit" class="btn btn-primary">Log In</button>`
         )

@@ -20,11 +20,6 @@
 
     <form id="add-signup-form">
 
-				
-					<label for="form-name">Name</label>
-            <input type="text" id="form-name" class="form-control" required>
-          </div>
-          <br><br>
 
          
             <label for="form-email">Email</label>
@@ -38,7 +33,7 @@
                 </div>
                 <br><br>
 
-          <button type="submit" class="btn btn-primary" id="submit_signup" onclick="signup($('#form-name').val(),$('#form-email').val(), $('#form-pw').val())">Sign me up!</button>
+          <button type="submit" class="btn btn-primary" id="submit_signup" onclick="signup($('#form-email').val(), $('#form-pw').val())">Sign me up!</button>
       </form>
     </center>
 
