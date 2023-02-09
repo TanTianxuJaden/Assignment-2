@@ -47,4 +47,8 @@ $.ajax(settings).done(function (response) {
   console.log(response);
   window.location.href = "../Login/login.html";
 });
+
+setTimeout(function() {
+  document.querySelector("lottie-player").remove();
+}, 3000);
 }

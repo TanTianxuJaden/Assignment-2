@@ -41,4 +41,10 @@ $.ajax(settings).done(function (response) {
   console.log(response);
   window.location.href = "leaderboard.html";
 });
+
+setTimeout(function() {
+  document.querySelector("lottie-player").remove();
+}, 3000);
+
+
 }
