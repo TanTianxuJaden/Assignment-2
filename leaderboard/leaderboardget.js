@@ -15,14 +15,16 @@ var settings = {
   $.ajax(settings).done(function (response) {
     console.log(response);
     let leaderboardTable = document.getElementById("leaderboard-table");
-    response.forEach(function(item) {
-      let tr = document.createElement("tr");
-      let scoreTd = document.createElement("td");
-      scoreTd.innerText = item.score;
-      tr.appendChild(scoreTd);
-      let subjectTd = document.createElement("td");
-      subjectTd.innerText = item.subject;
-      tr.appendChild(subjectTd);
-      leaderboardTable.appendChild(tr);
-    });
+  let tableBody = leaderboardTable.getElementsByTagName("tbody")[0];
+  tableBody.innerHTML = ""; // Clear the table body
+  response.forEach(function(item) {
+    let tr = document.createElement("tr");
+    let scoreTd = document.createElement("td");
+    scoreTd.innerText = item.score;
+    tr.appendChild(scoreTd);
+    let subjectTd = document.createElement("td");
+    subjectTd.innerText = item.subject;
+    tr.appendChild(subjectTd);
+    tableBody.appendChild(tr);
+  });
   });
