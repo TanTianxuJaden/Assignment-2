@@ -54,6 +54,9 @@ var settings = {
         alert("Invalid email or password");
     }
   });
+  setTimeout(function() {
+    document.querySelector("lottie-player").remove();
+  }, 3000);
 }
 
 
