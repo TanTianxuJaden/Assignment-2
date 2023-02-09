@@ -31,17 +31,17 @@ var settings = {
     for (var i = 0; i < response.length; i++) {
         if (response[i].email == email && response[i].password === password) {
             loggedin = true;
-            $("#login_submit").html(
+            $("#submit_login").html(
                 `<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sjcbakkb.json">`
             );
             sessionStorage.setItem("Account", JSON.stringify(response[i]));
             console.log(sessionStorage.getItem("Account"));
-            window.location.href = "index.html"
+            window.location.href = "../index.html"
         }
     }
     if (loggedin === false) {
         alert("Invalid name or password");
-        $("#login_submit").html(
+        $("#submit_login").html(
             `<button type="submit" class="btn btn-primary">Log In</button>`
         )
     }

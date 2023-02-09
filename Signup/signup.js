@@ -1,10 +1,10 @@
 let apikey = "63d663b83bc6b255ed0c43f7";
 
-$("#submit_signup").submit(function (e) {
+$("#add-signup-form").submit(function (e) {
     e.preventDefault();
-let name = $("#signup_name").val();
-let email = $("#signup_email").val();
-let password = $("#signup_password").val();
+let name = $("#form-name").val();
+let email = $("#form-email").val();
+let password = $("#form-pw").val();
 
 signup(name, email, password);
 });
@@ -35,6 +35,6 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
-  window.location.href = "login.html";
+  window.location.assign = "../Login/login.html";
 });
 }
