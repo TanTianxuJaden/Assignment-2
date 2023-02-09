@@ -90,6 +90,7 @@
 .quiz_container {
   position: relative;
   text-align: center;
+  height: 100%;
 }
 
 .text_container
