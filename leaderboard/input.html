@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Score & Subject Input</title>
+    <link href="leaderboard.css" rel="stylesheet" type="text/css" />
+</head>
+
+<center>
+<a href="../index.html"><img src="../Images/kawizz_purple.png"></a>
+
+<br><br><br><br><br><br><br><br><br>
+<body>
+
+	<div class="container">
+		<h1 style="color: white;">Score & Subject Input</h1>
+		</div>
+
+    <form id="leaderboardinputs">
+
+
+         
+            <label for="form-score" style="color: white;">Score</label>
+            <input type="number" id="form-score" class="form-control" required>
+          </div>
+          <br><br>
+
+              
+                <label for="form-subject" style="color: white;">Subject</label>
+                  <input type="text" id="form-subject" class="form-control" required>
+                </div>
+                <br><br>
+
+          <button type="submit" class="btn btn-primary" id="submit_inputs" onclick="inputs($('#form-score').val(), $('#form-subject').val())">Send</button>
+      </form>
+    </center>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="leaderboardpost.js"></script>
+  </body>
+</html>
