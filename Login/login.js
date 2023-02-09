@@ -12,16 +12,18 @@ let password = $("#login_password").val();
 
 
 var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://assignment2-1813.restdb.io/rest/signup",
-    "method": "GET",
-    "headers": {
+    async: true,
+    crossDomain: true,
+    url: "https://assignment2-1813.restdb.io/rest/signup",
+    method: "GET",
+    headers: {
       "content-type": "application/json",
-      "x-apikey": "apikey",
+      "x-apikey": apikey,
       "cache-control": "no-cache"
     }
   }
+  
+
   
   $.ajax(settings).done(function (response) {
     console.log(response);
@@ -30,7 +32,7 @@ var settings = {
         if (response[i].email == email && response[i].password === password) {
             loggedin = true;
             $("#login_submit").html(
-                `<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sjcbakkb.json>`
+                `<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sjcbakkb.json">`
             );
             sessionStorage.setItem("Account", JSON.stringify(response[i]));
             console.log(sessionStorage.getItem("Account"));
@@ -39,8 +41,8 @@ var settings = {
     }
     if (loggedin === false) {
         alert("Invalid name or password");
-        $("login_submit").html(
-            <button type="submit" class="btn btn-primary">Log In</button>
+        $("#login_submit").html(
+            `<button type="submit" class="btn btn-primary">Log In</button>`
         )
     }
   });
