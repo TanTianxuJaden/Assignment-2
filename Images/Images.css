@@ -17,6 +17,10 @@
     left: 25%;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    border: 2px;
+    border-style: outset;
+    background-color: white;
+    border-radius: 10px;
   } 
 
   .text_quiz_images h2

@@ -29,8 +29,8 @@ We have decided to go with a simple white purple theme with hinges of gray that 
 - Bootstrap
 
 
-# Credits #
-# Media #
+
+# Credit and Media #
 https://www.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_18240979.htm#query=white%20background&position=24&from_view=keyword
 https://www.clipartmax.com/download/m2i8G6d3b1Z5b1N4_three-line-menu-icon/
 https://app.logo.com/dashboard/logo_1c451f46-1e39-4043-8718-b4c095677087/your-logo-files
