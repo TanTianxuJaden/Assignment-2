@@ -31,3 +31,7 @@ body{
     color: white;
 }   
 
+.next_button{
+    text-decoration: none;
+    color: black;
+}

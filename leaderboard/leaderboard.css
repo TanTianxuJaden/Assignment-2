@@ -1,3 +1,16 @@
-body {
-    background-image: url(../Images/mcq.jpg);
-  }
+body{
+  text-align: center;
+  background-color: rgba(238, 238, 238, 0.963);
+  font-size: 130%;
+  background-image: url(../Images/mcq.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 10px;
+  width:auto;
+  padding:0;
+  margin:0;
+}
