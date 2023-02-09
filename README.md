@@ -18,7 +18,7 @@ We have decided to go with a simple white purple theme with hinges of gray that 
 - 4 quizes for user to test his/her knowledge 
 - Quick sypnosis on what the quiz will be testing his/her about
 - Image below sypnosis to give user the idea on what type of topic quiz is going to test his/her on
-- In profile page, user is able to see his/her avatar and level
+- In profile page, user is able to see his/her avatar and level, from the progress bar
 
 # Technologies used #
 - CSS

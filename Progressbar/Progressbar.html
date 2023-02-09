@@ -1,53 +1,36 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-    <link href="Progressbar.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <style>
-        #myProgress {
-          width: 100%;
-          background-color: #ddd;
-        }
-        
-        #myBar {
-          width: 1%;
-          height: 30px;
-          background-color: #04AA6D;
-        }
-        </style>
-        <body>
-        
-        <h1>JavaScript Progress Bar</h1>
-        
-        <div class="myProgress">
-          <div class="myBar"></div>
-        </div>
-        
-       
-        <button onclick="move()">Click Me</button> 
-        
-        <script>
-        var i = 0;
-        function move() {
-          if (i == 0) {
-            i = 1;
-            var elem = document.getElementsByClassName("myBar");
-            var width = 1;
-            var interval= setInterval(frame, 30);
-            function frame() {
-              if (width >= 10) {
-                clearInterval(interval);
-                i = 0;
-              } else {
-                width++;
-                elem.style.width = width + "%";
-              }
-            }
-          }
-        }
-        </script>
-        
+<title>example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="Progressbar.css" rel="stylesheet" type="text/css" />
 
+<body>
+  <div class="w3-container">
+    <h2>dynamic Progress bar</h2>
+    <p>example:</p>
+    <div class="w3-light-grey">
+      <div id="myBar" class="w3-container w3-green w3-center" style="width:0%">0%</div>
+    </div>
+    <br>
+    <button class="w3-button w3-green" onclick="move()">Click Me</button>
+
+  </div>
+  <script>
+    var width = 0;
+
+function move() {
+  var elem = document.getElementById("myBar");
+    if (width < 100) {
+      width+=25;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1 + '%';
+    }
+  
+}
+  </script>
 </body>
+
 </html>
+        
