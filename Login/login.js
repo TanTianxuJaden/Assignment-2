@@ -2,7 +2,25 @@ let apikey = "63d663b83bc6b255ed0c43f7";
 
 
 $("#login_form").submit(function (e) {
-    e.preventDefault();
+  e.preventDefault();
+  let email = $("#login-email").val();
+  let password = $("#login-pw").val();
+  matchAccounts(email,password)
+
+  $("body").append(`
+<div id="lottie-overlay">
+<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_VMNbpVQjTb.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin-left:850px"  loop autoplay></lottie-player>
+</div>
+`);
+});
+
+
+
+
+
+function matchAccounts(email,password)
+
+{
 var settings = {
     async: true,
     crossDomain: true,
@@ -18,11 +36,11 @@ var settings = {
 
   $.ajax(settings).done(function (response) {
     console.log(response);
+    console.log(email);
+    console.log(password);
     var loggedin = false;
-    let email = $("#login-email").val();
-    let password = $("#login-pw").val();
     for (var i = 0; i < response.length; i++) {
-        if (response[i].email == email && response[i].password === password) {
+        if (response[i].email == email && response[i].password == password) {
             loggedin = true;
             $("#submit_login").html(
             );
@@ -34,11 +52,9 @@ var settings = {
     
     if (loggedin === false) {
         alert("Invalid email or password");
-        $("#submit_login").html(
-        )
     }
   });
-});
+}
 
 
 

@@ -1,6 +1,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <style>
 
 body{
@@ -56,26 +57,19 @@ tr:nth-child(even) {
     </div>
   </div>
 
-<div class="table_flex">
-  <table>
-    <tr>
-      <th>Subject</th>
-      <th>Score</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-    </tr>
-    <tr>
-      <td>Adam</td>
-      <td>Johnson</td>
-    </tr>
+  <table id="leaderboard-table">
+    <thead>
+      <tr>
+        <th>Score</th>
+        <th>Subject</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
   </table>
-</div>
 
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="leaderboardget.js"></script>
 </body>
 </html>
