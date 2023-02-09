@@ -3,8 +3,6 @@ let apikey = "63d663b83bc6b255ed0c43f7";
 
 $("#login_form").submit(function (e) {
     e.preventDefault();
-let email = $("#login-email").val();
-let password = $("#login-pw").val();
 var settings = {
     async: true,
     crossDomain: true,
@@ -16,9 +14,13 @@ var settings = {
       "cache-control": "no-cache"
     }
   }
+
+
   $.ajax(settings).done(function (response) {
     console.log(response);
     var loggedin = false;
+    let email = $("#login-email").val();
+    let password = $("#login-pw").val();
     for (var i = 0; i < response.length; i++) {
         if (response[i].email == email && response[i].password === password) {
             loggedin = true;
@@ -29,10 +31,10 @@ var settings = {
             window.location.href = "../index.html"
         }
     }
+    
     if (loggedin === false) {
         alert("Invalid email or password");
         $("#submit_login").html(
-            `<button type="submit" class="btn btn-primary">Log In</button>`
         )
     }
   });
