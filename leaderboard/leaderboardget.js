@@ -16,7 +16,7 @@ var settings = {
     console.log(response);
     let leaderboardTable = document.getElementById("leaderboard-table");
   let tableBody = leaderboardTable.getElementsByTagName("tbody")[0];
-  tableBody.innerHTML = ""; // Clear the table body
+  tableBody.innerHTML = "";
   response.forEach(function(item) {
     let tr = document.createElement("tr");
     let scoreTd = document.createElement("td");
