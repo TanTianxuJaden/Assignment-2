@@ -8,6 +8,8 @@ Our quizzes will have 10 random general knowledge questions every time the quiz 
  Our target audience of our website is mainly for kids aged from 7 - 16. Thus, the reason for our cartoonist design of our website, such as our avatar for users for our website. 
 
  Wireframe: https://xd.adobe.com/view/a215a4b9-b949-4bae-8ee4-71c9bb8e51c6-f746/
+ 
+ GitHub page: https://github.com/TanTianxuJaden/Assignment-2.git
 
 
 # Design process #
