@@ -44,3 +44,6 @@ function checkAnswers() {
     document.getElementById("result").style.fontSize="125%";
     document.getElementById("result").innerHTML = "Your total score is " + score + " out of 10.";
   }
+
+
+  // Xerxes&Jaden //
